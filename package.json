@@ -1,0 +1,33 @@
+{
+	"name": "svelte-rpc",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^6.0.1",
+		"@sveltejs/kit": "https://pkg.pr.new/sveltejs/kit/@sveltejs/kit@b921e13",
+		"@sveltejs/vite-plugin-svelte": "^5.1.0",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"prettier-plugin-tailwindcss": "^0.6.13",
+		"svelte": "https://pkg.pr.new/svelte@15844",
+		"svelte-check": "^4.2.2",
+		"typescript": "^5.8.3",
+		"vite": "^7.0.2"
+	},
+	"dependencies": {
+		"@fontsource/atkinson-hyperlegible": "^5.2.6",
+		"@tailwindcss/vite": "^4.1.11",
+		"lucide-svelte": "^0.525.0",
+		"tailwindcss": "^4.1.11",
+		"zod": "^3.25.74"
+	}
+}

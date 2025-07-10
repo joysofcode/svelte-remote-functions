@@ -1,0 +1,26 @@
+@import '@fontsource/atkinson-hyperlegible';
+@import 'tailwindcss';
+
+:root {
+	--font-sans: 'Atkinson Hyperlegible', sans-serif;
+}
+
+@utility scrollbar {
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #4b557e;
+		border-radius: 8px;
+	}
+}
+
+@utility pixelated {
+	image-rendering: pixelated;
+}
